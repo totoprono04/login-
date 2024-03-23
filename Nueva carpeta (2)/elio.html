@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(Blue-lines-abstract-picture_2560x1600.jpg);
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 10px 10px 10px rgba(17, 16, 16, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      height: 40px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      height: 40px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .social-button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #1da1f2;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+      height: 40px;
+      margin-top: 10px;
+    }
+
+    .social-button:hover {
+      background-color: #0d86c9;
+    }
+    .Social-button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #009dff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      height: 40px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>iniciar secion </h2>
+    <form action="#">
+      <input type="text" placeholder="correo" required>
+      <input type="password" placeholder="contraseña" required>
+      <input type="submit" value="entrar">
+    </form>
+    <button class="social-button" onclick="redirectToSocial()">Twitter</button>
+
+    <button class="Social-button" onclick="redirectToSocial()"> Facebook </button>
+   
+  </div>
+
+  <script>
+    function redirectToSocial() {
+      window.location.href = "https://twitter.com"; // URL de la red social a la que quieres redirigir
+    }
+  </script>
+  <script>
+    function redirectToSocial(){
+        window.location.href = "https://www.facebook.com";
+    }
+  </script>
+</body>
+</html>
